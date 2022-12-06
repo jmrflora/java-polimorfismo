@@ -1,4 +1,4 @@
-public class ContaCorrente extends Conta{
+public class ContaCorrente extends Conta implements Tributavel{
     //não herda construtor
 
 
@@ -15,5 +15,11 @@ public class ContaCorrente extends Conta{
     @Override
     public void deposita(double valor){
         this.setSaldo(this.getSaldo() + valor);
+    }
+
+    @Override
+    public double getValorImposto() {
+        // TODO Auto-generated method stub
+        return (0.01 * super.getSaldo());
     }
 }
