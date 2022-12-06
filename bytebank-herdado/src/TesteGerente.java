@@ -10,6 +10,8 @@ public class TesteGerente {
         System.out.println(g1.getCpf());
         System.out.println(g1.getSalario());
 
+        Auntenticavel referencia = new Gerente();
+
         System.out.println(g1.autentica(12345));
 
         g1.setSenha(12345);
