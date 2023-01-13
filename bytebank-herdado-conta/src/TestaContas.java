@@ -1,5 +1,5 @@
 public class TestaContas {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SaldoInsuficienteEx{
         ContaCorrente cc = new ContaCorrente(111, 111);
         cc.deposita(100);
         System.out.println("CC saldo: "+ cc.getSaldo());
